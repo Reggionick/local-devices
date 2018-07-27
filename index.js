@@ -68,7 +68,7 @@ function pingServer (address) {
  * Reads the arp table.
  */
 function arpAll () {
-  return cp.exec('arp -a').then(parseAll)
+  return cp.exec('arp -a', {maxBuffer: 1024 * 100000}).then(parseAll)
 }
 
 /**
