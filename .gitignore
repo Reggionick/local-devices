@@ -1,6 +1,9 @@
 # Sublime
 *.sublime*
 
+# WebStrorm
+.idea
+
 # OSX
 *.DS_Store
 
